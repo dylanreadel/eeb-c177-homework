@@ -1,4 +1,4 @@
-# Lab Homework Week Two
+# Week Two Lab Homework
 
 ### Part One:  RegexOne Solutions
 
@@ -16,7 +16,7 @@
 
 7. `aa+b*c+`
 
-8. \d+ files? found\?
+8. `\d+ files? found\?`
 
 9. `\s`
 
@@ -24,9 +24,9 @@
 
 11. `^(file_\w+)\.pdf$`
 
-12. `^(\w+ (\d+))$
+12. `^(\w+ (\d+))$`
 
-13. `((\d{4})x(\d{3,4}))
+13. `((\d{4})x(\d{3,4}))`
 
 14. `I love (cats|dogs)`
 

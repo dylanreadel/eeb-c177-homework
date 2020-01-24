@@ -3,9 +3,9 @@
 ### Nobel Prizes
 
 
-1. `$ tail -n +2 nobel.csv | cut -d "," -f 3 | grep -w category | wc -l`
+1. `$ tail -n +2 nobel.csv | cut -d "," -f 3 | grep -w "category" | wc -l`
 
- **For this command, replace `category` with each Nobel prize category.**
+ **For this command, replace `"category"` with each Nobel prize category.**
 
  chemistry: 181
 
@@ -41,10 +41,18 @@
 
 "Anderson","Bardeen","Bloch","Bohr","Bragg","Brown","Buck","Chamberlain","Curie","Fischer","Frank","Friedman","Hall","Henderson","Hess","Hodgkin""Hoffmann","Jensen","Kendall","Kornberg","Krebs","Lee","Lewis","Marshall","Mistral","Moser","Mott","Müller","Murad","Myrdal",NA,"Pauling","Porter","Richards","Richardson","Sanger","Siegbahn","Simon","Smith","Thomson","Tinbergen","Wiesel","Williams","Wilson"
 
-4. `$ tail -n +2 nobel.csv | cut -d "," -f 3 | grep -w category | wc -l`
+4. `$ tail -n +2 nobel.csv | cut -d "," -f 2,3 | grep -w category | sort -n | uniq | wc -l`
 
- **Use this command for each prize category and determine which prizes were awarded the most and least times.**
+ **For this command, replace `"category"` with each Nobel prize category.**
 
- Least: Economics with 81
+ Chemistry: 110 years
 
- Most: Medicine with 116
+ Economics: 50 years
+
+ Literature: 110 years
+
+ Medicine: 109 years
+
+ Peace: 99 years
+
+ Physics: 112 years
